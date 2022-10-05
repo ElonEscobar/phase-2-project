@@ -14,6 +14,7 @@ const Pages = () => {
     <>
       <Router>
         <Header />
+        <Home/>
         <Routes>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />

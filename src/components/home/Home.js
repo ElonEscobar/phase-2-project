@@ -1,5 +1,4 @@
 import React from "react"
-import Awards from "./awards/Awards"
 import Featured from "./featured/Featured"
 import Hero from "./hero/Hero"
 import Location from "./location/Location"
@@ -13,7 +12,7 @@ const Home = () => {
       <Hero />
       <Featured />
       <Recent />
-      <Awards />
+      
       <Location />
       <Team />
       <Price />

@@ -14,16 +14,16 @@ const Pages = () => {
     <>
       <Router>
         <Header />
-        <Home/>
         <Routes>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/services' component={Services} />
-          <Route exact path='/blog' component={Blog} />
-          <Route exact path='/pricing' component={Pricing} />
-          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/about' element={<About/>} />
+          <Route exact path='/services' element={<Services/>} />
+          <Route exact path='/blog' element={<Blog/>} />
+          <Route exact path='/pricing' element={<Pricing/>} />
+          <Route exact path='/contact' element={<Contact/>} />
+          <Route exact path='/' element={<Home/>} />
+
         </Routes>
-        <Footer />
+        <Footer/>
       </Router>
     </>
   )

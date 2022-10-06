@@ -31,7 +31,7 @@ const Contact = () => {
   function handleMessage(e){
     setUserDetails({...userDetails, message:e.target.value})
   }
-
+  
   function handleUserSubmit(e){
     e.preventDefault();
     console.log(userDetails)

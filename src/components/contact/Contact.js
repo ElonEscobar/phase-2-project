@@ -4,7 +4,7 @@ import Back from "../common/Back"
 import "./contact.css"
 
 const Contact = () => {
-  const apiUrl = " http://localhost:3000/users"
+  const apiUrl = " https://real-est-ms.herokuapp.com/users"
   useEffect(()=>{
     fetch(apiUrl)
     .then(res => res.json())
@@ -31,7 +31,7 @@ const Contact = () => {
   function handleMessage(e){
     setUserDetails({...userDetails, message:e.target.value})
   }
-  
+
   function handleUserSubmit(e){
     e.preventDefault();
     console.log(userDetails)

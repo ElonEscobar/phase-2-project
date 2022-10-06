@@ -3,7 +3,7 @@ import Heading from "../../common/Heading"
 import "./style.css"
 
 const Location = () => {
-  const locationUrl = "http://localhost:3000/location"
+  const locationUrl = "https://real-est-ms.herokuapp.com/location"
   const [location, setLocations] = useState([])
   useEffect(()=>{
     const getLocations = async ()=>{

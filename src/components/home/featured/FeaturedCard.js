@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 const FeaturedCard = () => {
-  const featuredApi = "http://localhost:3000/featured"
+  const featuredApi = "https://real-est-ms.herokuapp.com/featured"
   const [ featured, setFeatured] = useState([])
   useEffect(()=>{
     const getFeatured = async() =>{

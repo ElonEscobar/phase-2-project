@@ -1,7 +1,17 @@
-import React from "react"
-import { featured } from "../../data/Data"
+import React, { useEffect, useState } from "react"
 
 const FeaturedCard = () => {
+  const featuredApi = "http://localhost:3000/featured"
+  const [ featured, setFeatured] = useState([])
+  useEffect(()=>{
+    const getFeatured = async() =>{
+      const res = await fetch(featuredApi);
+      const jsonFile = await res.json()
+      setFeatured(jsonFile)
+    }
+    getFeatured();
+  },[])
+  console.log(featured)
   return (
     <>
       <div className='content grid5 mtop'>

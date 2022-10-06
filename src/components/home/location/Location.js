@@ -1,9 +1,20 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Heading from "../../common/Heading"
-import { location } from "../../data/Data"
 import "./style.css"
 
 const Location = () => {
+  const locationUrl = "http://localhost:3000/location"
+  const [location, setLocations] = useState([])
+  useEffect(()=>{
+    const getLocations = async ()=>{
+      const res = await fetch(locationUrl);
+      const jsonFile = await res.json();
+      setLocations(jsonFile)
+    }
+    getLocations()
+
+  },[])
+
   return (
     <>
       <section className='location padding'>

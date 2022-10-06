@@ -2,27 +2,34 @@
     display: flex;
 }
 .contact textarea {
-border: 1px solid rgba(0, 0, 0, 0.1);
-width: 100%;
-border-radius: 5px;
-margin-bottom: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 7px 5px;
+    font-size: 1rem;
+
 }
 .contact input {
-margin-bottom: 20px;
-margin-right: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 7px 5px;
+    font-size: 1rem;
+    border-radius: 7px ;
 }
 .contact form {
-padding: 30px;
+    padding: 30px;
 }
 @media screen and (max-width: 768px) {
-.contact h4 {
-    width: 100%;
-    margin-bottom: 30px;
-}
-.contact form div {
-    flex-direction: column;
-}
-.contact input {
-    width: 100%;
-}
+    .contact h4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contact form div {
+        flex-direction: column;
+    }
+    .contact input {
+        width: 100%;
+    }
 }

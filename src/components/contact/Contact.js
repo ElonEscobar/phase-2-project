@@ -56,7 +56,7 @@ const Contact = () => {
               <input type='text' placeholder='Email' value={userDetails.email} onChange={handleMail}/>
             </div>
             <input type='text' placeholder='Subject' value={userDetails.subject} onChange={handleSubject}/>
-            <textarea cols='30' rows='10'value={userDetails.message} onChange={handleMessage}></textarea>
+            <textarea placeholder="Type message..." cols='30' rows='10'value={userDetails.message} onChange={handleMessage}></textarea>
             <button type="submit">Submit Request</button>
             
           </form>

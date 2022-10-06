@@ -49,7 +49,7 @@ const Contact = () => {
         <Back name='Contact Us' title='Get Help & Friendly Support' cover={img} />
         <div className='container'>
           <form className='shadow' onSubmit={handleUserSubmit}>
-            {isSubmitted ? <div>{`Thank you ${userDetails.name}, Your response has been recorded. We'll get back to you in a few minutes.`}</div> : null}
+            {isSubmitted ? <div className="success-msg">{`Thank you ${userDetails.name}, Your response has been recorded. We'll get back to you in a few minutes.`}</div> : null}
             <h4>Fillup The Form</h4> <br />
             <div>
               <input type='text' placeholder='Name' value={userDetails.name} onChange={handleName}/>

@@ -10,6 +10,7 @@ const Footer = () => {
     }
     function handleSubscribe(){
       console.log(userEmail)
+      alert("Subscribed !!!")
 
     }
     function handleContact(){

@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom"
 import "./footer.css"
 
 const Footer = () => {
-    // get email input and display as element
+  
     const [userEmail, setUserEmail] = useState({email:""})
     function handleEmails(e){
       setUserEmail({...userEmail, email: e.target.value})
